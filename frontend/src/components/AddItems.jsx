@@ -47,7 +47,7 @@ function AddItems(){
     const handleAddImages =async(e)=>{
         e.preventDefault();
         try{
-        const {data :filename} = await  axios.post('http://localhost:3000/upload-via-link', {link : coverImg})
+        const {data :filename} = await  axios.post('https://frontend-project-bdlh.onrender.com/upload-via-link', {link : coverImg})
           setPhoto([filename]);
            localStorage.setItem('uploadedPhotos',JSON.stringify(update));
            console.log("photo array:", photo);
@@ -64,7 +64,7 @@ function AddItems(){
   if (!additional.trim()) return;
 
   try {
-    const { data: filename } = await axios.post('http://localhost:3000/upload-via-link', {
+    const { data: filename } = await axios.post('https://frontend-project-bdlh.onrender.com/upload-via-link', {
       link: additional,
     });
 
@@ -126,7 +126,7 @@ function AddItems(){
          { photo.length > 0 && (
             photo.map((link,index)=>(
                 <div key={index}>
-                    <img src={`http://localhost:3000/uploads/${link}`} alt="photo"
+                    <img src={`https://frontend-project-bdlh.onrender.com/uploads/${link}`} alt="photo"
                          className="rounded-3 m-2"
                          style={{width:'60%'}}></img>
                 </div>
@@ -149,7 +149,7 @@ function AddItems(){
   {additionalPhotos.map((img, idx) => (
     <img
       key={idx}
-      src={`http://localhost:3000/uploads/${img}`}
+      src={`https://frontend-project-bdlh.onrender.com/uploads/${img}`}
       alt="additional"
       className="rounded-3 m-2"
       style={{ width: '100px' }}

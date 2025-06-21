@@ -40,7 +40,7 @@ function ViewItems(){
                  className="rounded-3 ms-3 mb-4 d-flex flex-column justify-content-center align-items-center" 
                  style={{width:'300px',height:'320px', border:'1px solid grey'}}>
              <div style={{width:'100%',height:'230px'}}>
-            <img src={`http://localhost:3000/uploads/${item.coverImage}`} 
+            <img src={`https://frontend-project-bdlh.onrender.com/uploads/${item.coverImage}`} 
                  style={{width:'inherit',height:'inherit' ,marginTop:'5px'}}>
             </img>
             </div>

@@ -57,7 +57,7 @@ function Details() {
     <h2>Item Detail</h2>
     <div className="card p-4 shadow-sm">
       <img
-        src={`http://localhost:3000/uploads/${item.coverImage}`}
+        src={`https://frontend-project-bdlh.onrender.com/uploads/${item.coverImage}`}
         alt={item.name}
         style={{ width: '300px', borderRadius: '10px', marginBottom: '1rem' }}
       />
@@ -73,7 +73,7 @@ function Details() {
             {item.additionalImages.map((img, idx) => (
               <img
                 key={idx}
-                src={`http://localhost:3000/uploads/${img}`}
+                src={`https://frontend-project-bdlh.onrender.com/uploads/${img}`}
                 alt={`additional-${idx}`}
                 style={{ width: '120px', borderRadius: '8px' }}
               />
